@@ -1,0 +1,68 @@
+\documentclass[xcolor=svgnames,aspectratio=169]{beamer} 
+\usetheme{metropolis}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{theorems}[numbered]
+\usepackage{newtxtext}           
+\usepackage{amsmath,amssymb,amsthm} 
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\everymath{\displaystyle}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{Q}[thm]{Question}
+\usepackage{bbm}
+\usepackage{ascmac}
+
+\useoutertheme{miniframes}
+\setbeamertemplate{headline}[miniframes theme]
+\setbeamertemplate{mini frames}[circle]
+
+\setbeamertemplate{headline}
+{\begin{beamercolorbox}{section in head/foot}\vskip2pt\insertnavigation{\paperwidth}\vskip2pt\end{beamercolorbox}}
+
+\begin{document} 
+
+\title{Titile\\ \small{subtitile}}
+\author{Naoki Eguchi}          
+\institute{Faculty of Medicine, Kyoto University} 
+\date{\today}
+
+\begin{frame}                  
+    \titlepage                     
+\end{frame}
+
+\begin{frame}{Today's agenda}                  
+    \begin{itemize}
+        \item Introduction: 
+    \end{itemize}
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{English template}
+    \begin{definition}[name]
+        Naoki Eguchi
+    \end{definition}
+\end{frame}
+
+\section{main contents}
+
+\begin{frame}
+    \begin{itemize}
+        \item 
+    \end{itemize}
+\end{frame}
+
+\section*{References}
+
+\begin{frame}{Reference}
+    \begin{itemize}
+        \item Author, (year). 
+        \textit{Book}, Unpubished.
+    \end{itemize}
+\end{frame}
+
+\end{document}
