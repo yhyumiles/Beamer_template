@@ -4,75 +4,43 @@
 \setbeamertemplate{theorems}[numbered]
 \usepackage{luatexja}
 \usepackage{luatexja-fontspec}
-\setmainjfont{NotoSerifJP[wght].ttf}[Path = /Users/naoky/Library/Fonts/,Renderer = Basic,FontFeatures = {Weight=400},Scale = 0.95]
 \usepackage{newtxtext}           
-\setmonofont{Fira Code}           %
+\setmonofont{Fira Code}           
 \usepackage{amsthm} 
 \usepackage{graphicx}
-\usepackage{mediabb}
 \usepackage{xcolor}
 \usepackage{tikz}
 \everymath{\displaystyle}
-\newcommand{\1}{\mbox{1}\hspace{-0.25em}\mbox{l}}
 \usepackage{bbm}
 \usepackage{lmodern}
 
-%%%%%スライド上部のナビゲーション不要の場合はここを消す%%%%%%%%
-\useoutertheme{miniframes}
-\setbeamertemplate{headline}[miniframes theme]
-\setbeamertemplate{mini frames}[circle]
-
-\setbeamertemplate{headline}
-{
-  \begin{beamercolorbox}{section in head/foot}
-    \vskip2pt\insertnavigation{\paperwidth}\vskip2pt
-  \end{beamercolorbox}%
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document} 
 
-%%%%%講演に関する情報%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{トップページのタイトル} 
+\title{タイトル} 
 \author{Naoki Eguchi}          
 \institute{Faculty of Medicine, Kyoto University} 
 \date{\today}
 
-%%%%%タイトルページ%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}                  
-  \titlepage                     
+    \titlepage                     
 \end{frame}
-
-%%%%%目次のページ%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{frame}{Agenda}                  
-% \tableofcontents
-% \end{frame}
 
 \section{セクション１}
 
-\begin{frame}{このページのタイトル}
-  本文
-  \begin{itemize}
-    \item 箇条書き
-    \item 箇条書きの中に
+\begin{frame}{サブタイトル}
+    本文
     \begin{itemize}
-      \item さらに箇条書き
-      \item もできます
+    \item 箇条書き
     \end{itemize}
-    \item 色を変えたいときは\alert{alert}コマンドを使います．
-  \end{itemize}
 \end{frame}
 
 \section{References}
 
 \begin{frame}{References}
-  たとえば，以下のように書きます．
-  \begin{itemize}
-    \item Author, (20~). 
-          \textit{Book} 
-          ~ Press.
-    \item 本の名前、〜出版.
-  \end{itemize}
+    \begin{itemize}
+        \item author, (year). \textit{book}, Unpublished.
+        \item 著者、(年). 本, 〜出版.
+    \end{itemize}
 \end{frame}
 
 \end{document}
